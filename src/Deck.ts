@@ -25,8 +25,13 @@ class Deck {
   }
 
   isMarked(card: Card) : boolean {
-    return this[card.getSuit()][card.getNumber()].length > 0 ||
-            this[card.getSuit()][card.getNumber()] === 'Free'
+
+    if(!this[card.getSuit()][card.getNumber()]){
+      return false;
+    }
+
+    return (this[card.getSuit()][card.getNumber()].length > 0 ||
+            this[card.getSuit()][card.getNumber()] === 'Free');
   }
 
   echo() : string {
