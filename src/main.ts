@@ -1,5 +1,9 @@
-function init() : Deck {
-  return new Deck();
+function initDeck() : Deck {
+  return Deck.getInstance();
+}
+
+function loadRules(): void {
+
 }
 
 function giveCards(d1: Deck) :Array<Card> {
@@ -21,7 +25,7 @@ function giveCards(d1: Deck) :Array<Card> {
 
 function main() :string {
 
-  var d1 =  init();
+  var d1 =  initDeck();
 
   var player1 :Array<Card> = giveCards(d1);
   var player2 :Array<Card> = giveCards(d1);

@@ -27,6 +27,7 @@
     "files": [
         "./src/Card.ts",
         "./src/Deck.ts",
-        "./src/main.ts"
+        "./src/main.ts",
+        "./src/play/game.ts"
     ]
 }
